@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="ID: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNutID" />
+
+    <TextView
+        android:text="Calories: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCalories" />
+
+    <TextView
+        android:text="TotalFat: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotalFat" />
+
+    <TextView
+        android:text="Cholesterol: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCholesterol" />
+
+    <TextView
+        android:text="Sodium: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSodium" />
+
+    <TextView
+        android:text="TotalCarbohydrates: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotCarbs" />
+
+    <TextView
+        android:text="Protien: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProtien" />
+</LinearLayout>

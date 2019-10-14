@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.iastate.tlavan.bonappetit.RecipeViewLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Recipe"
+        android:id="@+id/textViewRecipe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.046"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ingredient1"
+        android:id="@+id/textViewRecipeIngred1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.367"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ingredient2"
+        android:id="@+id/textViewRecipeIngred2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.651"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ingredient3"
+        android:id="@+id/textViewRecipeIngred3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.948"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

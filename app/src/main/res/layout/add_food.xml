@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.iastate.tlavan.bonappetit.AddFood"
+    tools:showIn="@layout/activity_add_food">
+
+   <!-- Title -->
+    <TextView
+        android:text="@string/Add_Food_to_Your_Inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAddFood"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textAddFood2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAddFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/EnterFood"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Food Name -->
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:id="@+id/addFood"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint = "@string/Food"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="121dp"
+        android:textColor="@color/colorPrimaryDark"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Food Category -->
+    <Spinner
+        android:id="@+id/choicesSpinner"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/addFood"
+        app:layout_constraintHorizontal_bias="0.507" />
+    <!--<EditText
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:id="@+id/addCategory"
+        android:hint = "@string/Category"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="196dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />-->
+
+    <!-- List of Categories in Database -->
+
+    <!-- Food Quantity -->
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:id="@+id/addQuantity"
+        android:hint = "@string/Quantity"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="296dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Button to add food to database -->
+    <Button
+        android:text="@string/Add_Food_to_Inventory"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnAddFood"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/addQuantity"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Button to navigate home (main screen) -->
+    <Button
+        android:text="@string/Home"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:id="@+id/af_Home"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- Button to log out (goes to login screen) -->
+    <Button
+        android:id="@+id/af_LogOut"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/LogOut"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/Choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/CategoryChoices"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/choicesSpinner" />
+
+</android.support.constraint.ConstraintLayout>

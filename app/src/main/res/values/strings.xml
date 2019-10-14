@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">BonAppetit</string>
+    <string name="title_activity_add_food">AddFood</string>
+
+    <!-- Shared Strings -->
+    <string name="Home">Home</string>
+    <string name="LogOut">Log Out</string>
+    <string name="Welcome">Welcome to BonAPPétit!</string>
+
+    <!-- Main 1 - Log In -->
+    <string name="Please_Log_In">Please Log In</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="AttemptsLeft">Login Attempts Remaining:</string>
+    <string name="num">#</string>
+    <string name="Login">Login</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Register">New to BonAPPétit? Register here!</string>
+
+    <!-- User Registration Screen -->
+    <string name="EnterName">Enter Your Full Name</string>
+    <string name="EnterUsername">Enter Your Username</string>
+    <string name="EnterEmail">Enter Your Email Address</string>
+    <string name="EnterPassword">Enter Your Password</string>
+    <string name="EnterPasswordAgain">Enter Your Password Again</string>
+    <string name="Register_New_Account">Register New Account</string>
+
+    <!-- Main 2 - Home Screen -->
+    <string name="AddFood">Add Food</string>
+    <string name="ViewFood">View Food</string>
+    <string name="ShopList">Shopping List</string>
+    <string name="ViewRecipe">View Recipe</string>
+    <string name="CreateRecipe">Create Recipe</string>
+
+    <!-- Add Food Strings -->
+    <string name="Add_Food_to_Your_Inventory">Add Food to Your Inventory</string>
+    <string name="EnterFood">Enter in the food you wish to add.</string>
+    <string name="Food">Food</string>
+    <string name="Category">Category</string>
+    <string name="Quantity">Quantity</string>
+    <string name="Add_Food_to_Inventory">Add Food to Inventory</string>
+    <string name="CategoryChoices">Categories: Refrigerated, Frozen, Dry, Spices, Other</string>
+    <string-array name="CategoryChoicesSpinner">
+        <item>Refrigerated</item>
+        <item>Frozen</item>
+        <item>Dry</item>
+        <item>Spices</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <!-- View Food -->
+    <string name="ViewByName">View Food by Category</string>
+    <string name="ViewByCat">View Food by Name</string>
+    <string name="ViewNutrition">View Nutrition</string>
+
+    <!-- View Nutrition -->
+    <string name="ShowNutrition">Show Nutrition</string>
+    <string name="Back">Back</string>
+    <string name="NutritionFacts">Nutrition Facts</string>
+
+    <!-- Create/View Recipe -->
+    <string name="Recipe">Recipe</string>
+    <string name="Add_Recipe">Add Recipe</string>
+    <string name="Recipe_Name">Recipe Name</string>
+    <string name="Local_Online">Local/Online</string>
+    <string name="PreMade">PreMade</string>
+    <string name="Ingredient1">Ingredient 1</string>
+    <string name="Ingredient2">Ingredient 2</string>
+    <string name="Ingredient3">Ingredient 3</string>
+    <string name="Ingredient4">Ingredient 4</string>
+    <string name="Ingredient5">Ingredient 5</string>
+    <string name="EnterRecipeName">Enter the recipe you wish to view.</string>
+    <string name="ViewAllRecipe">View All Recipes</string>
+    <string name="ViewRecipeByName">View Recipe By Name</string>
+
+    <!-- Create Recipe List View -->
+    <string name="ID">ID: </string>
+    <string name="RecipeNameColon">Recipe Name: </string>
+    <string name="Ingredient1Colon">Ingredient 1: </string>
+    <string name="Ingredient2Colon">Ingredient 2: </string>
+    <string name="Ingredient3Colon">Ingredient 3: </string>
+    <string name="RecipeRate">Recipe Rate: </string>
+
+    <!-- Shopping List -->
+    <string name="ShoppingList">Shopping List</string>
+    <string name="AddItem">Add Item</string>
+    <string name="DeleteItem">Delete Item(s)</string>
+
+</resources>

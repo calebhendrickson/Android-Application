@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.iastate.tlavan.bonappetit.ShoppingList">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/ShoppingList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ShoppingList"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- List View of Shopping Items -->
+
+    <!-- Add Food Text Box -->
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:id="@+id/addItemText"
+        android:hint = "@string/AddItem"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/sl_Add"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Button to add item to shopping list -->
+    <Button
+        android:text="@string/AddItem"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sl_Add"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.097" />
+
+    <!-- Button to delete item(s) from shopping list -->
+    <Button
+        android:text="@string/DeleteItem"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sl_Delete"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.277" />
+
+    <!-- Button to navigate to main screen -->
+    <Button
+        android:text="@string/Home"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sl_Home"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <!-- Button to log out (goes to login screen) -->
+    <Button
+        android:id="@+id/sl_LogOut"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sl_Home"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/LogOut"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ListView
+        android:id="@+id/sl_shopList"
+        android:layout_width="322dp"
+        android:layout_height="337dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ShoppingList"
+        android:layout_marginBottom="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
